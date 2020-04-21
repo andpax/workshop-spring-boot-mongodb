@@ -20,7 +20,7 @@ public class User implements Serializable {
 	private String email;
 	
 	@DBRef(lazy = true)
-	private List<Post> post = new ArrayList<>();
+	private List<Post> posts = new ArrayList<>();
 	
 	public User() {
 		// TODO Auto-generated constructor stub
@@ -56,12 +56,12 @@ public class User implements Serializable {
 		this.email = email;
 	}
 	
-	public List<Post> getPost() {
-		return post;
+	public List<Post> getPosts() {
+		return posts;
 	}
 
-	public void setPost(List<Post> post) {
-		this.post = post;
+	public void setPosts(List<Post> posts) {
+		this.posts = posts;
 	}
 
 	@Override
